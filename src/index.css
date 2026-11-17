@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Light Mode Prose */
+.blogger-content {
+  color: #334155;
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  word-break: break-word;
+}
+
+.blogger-content p {
+  margin-bottom: 1.35rem;
+}
+
+.blogger-content h1, 
+.blogger-content h2, 
+.blogger-content h3, 
+.blogger-content h4 {
+  color: #0f172a;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.blogger-content h1 { font-size: 1.875rem; }
+.blogger-content h2 { font-size: 1.5rem; }
+.blogger-content h3 { font-size: 1.25rem; }
+
+.blogger-content a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.15s ease;
+}
+
+.blogger-content a:hover {
+  color: #1d4ed8;
+}
+
+.blogger-content img {
+  border-radius: 1rem;
+  margin: 1.75rem auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.blogger-content ul, 
+.blogger-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.75rem;
+}
+
+.blogger-content ul {
+  list-style-type: disc;
+}
+
+.blogger-content ol {
+  list-style-type: decimal;
+}
+
+.blogger-content li {
+  margin-bottom: 0.5rem;
+}
+
+.blogger-content blockquote {
+  border-left: 4px solid #f05537;
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #475569;
+  background: #f8fafc;
+  padding: 1rem 1.25rem;
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.blogger-content table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.blogger-content th, 
+.blogger-content td {
+  border: 1px solid #e2e8f0;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.blogger-content th {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Dark Mode Prose Overrides */
+.dark .blogger-content {
+  color: #cbd5e1;
+}
+
+.dark .blogger-content h1, 
+.dark .blogger-content h2, 
+.dark .blogger-content h3, 
+.dark .blogger-content h4 {
+  color: #f8fafc;
+}
+
+.dark .blogger-content a {
+  color: #60a5fa;
+}
+
+.dark .blogger-content a:hover {
+  color: #93c5fd;
+}
+
+.dark .blogger-content img {
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.dark .blogger-content blockquote {
+  border-left-color: #f05537;
+  color: #94a3b8;
+  background: rgba(30, 41, 59, 0.4);
+}
+
+.dark .blogger-content th, 
+.dark .blogger-content td {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark .blogger-content th {
+  background: rgba(30, 41, 59, 0.7);
+  color: #f1f5f9;
+}

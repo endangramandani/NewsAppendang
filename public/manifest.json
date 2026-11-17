@@ -1,0 +1,19 @@
+{
+  "name": "SEISMO WEATHER NEWS",
+  "short_name": "SeismoNews",
+  "description": "Portal Berita Gempa Bumi, Cuaca, dan Edukasi Mitigasi Bencana Terpercaya Indonesia & Dunia.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f172a",
+  "theme_color": "#1e3a8a",
+  "categories": ["news", "weather", "education"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

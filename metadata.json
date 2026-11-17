@@ -1,0 +1,8 @@
+{
+  "name": "SEISMO WEATHER NEWS",
+  "description": "Portal berita pemantauan gempa bumi dan cuaca Indonesia serta dunia yang terintegrasi langsung dengan Google Blogger JSON API v3.0.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
